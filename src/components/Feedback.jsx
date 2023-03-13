@@ -14,6 +14,18 @@ const FeedbackWidget = () => {
     }));
   };
 
+  const countTotalFeedback = () => {
+    return state.good + state.neutral + state.bad;
+  };
+
+  const countPositiveFeedbackPercentage = () => {
+    const total = countTotalFeedback();
+    if (total === 0) {
+      return 0;
+    }
+    return Math.round((state.good / total) * 100);
+  };
+
   return (
     <div>
       <h2>Feedback Widget</h2>
@@ -23,6 +35,8 @@ const FeedbackWidget = () => {
       <p>Good: {state.good}</p>
       <p>Neutral: {state.neutral}</p>
       <p>Bad: {state.bad}</p>
+      <p>Total: {countTotalFeedback()}</p>
+      <p>Positive feedback: {countPositiveFeedbackPercentage()}%</p>
     </div>
   );
 };
