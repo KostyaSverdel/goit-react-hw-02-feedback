@@ -1,50 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
-  <div>
-    <p>Good: {good}</p>
-    <p>Neutral: {neutral}</p>
-    <p>Bad: {bad}</p>
-    <p>Total: {total}</p>
-    <p>Positive feedback: {positivePercentage}%</p>
-  </div>
-);
-
-Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
-};
-
-const FeedbackOptions = ({ options, onLeaveFeedback }) => (
-  <div>
-    {options.map(option => (
-      <button key={option} onClick={() => onLeaveFeedback(option)}>
-        {option}
-      </button>
-    ))}
-  </div>
-);
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired,
-};
-
-const Section = ({ title, children }) => (
-  <div>
-    <h2>{title}</h2>
-    {children}
-  </div>
-);
-
-Section.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
+import Statistics from './StatisticsFeedback';
+import FeedbackOptions from './FeedbackOptions';
+import Section from './SectionFeedback';
 
 const Notification = ({ message }) => <p>{message}</p>;
 
