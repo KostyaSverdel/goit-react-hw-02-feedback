@@ -1,0 +1,16 @@
+.buttonsHero {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    height: 100px;
+    width: 100px;
+    background-color: gold;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: none;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}

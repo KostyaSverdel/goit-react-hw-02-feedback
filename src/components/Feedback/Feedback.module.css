@@ -1,0 +1,7 @@
+.messageTitle {
+    font-family: Montserrat,sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}

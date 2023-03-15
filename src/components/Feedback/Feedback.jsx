@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Statistics from './StatisticsFeedback';
-import FeedbackOptions from './FeedbackOptions';
-import Section from './SectionFeedback';
+import Statistics from '../StatisticsFeedback/StatisticsFeedback';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import Section from '../SectionFeedback/SectionFeedback';
+import css from '../Feedback/Feedback.module.css';
 
-const Notification = ({ message }) => <p>{message}</p>;
+const Notification = ({ message }) => (
+  <p className={css.messageTitle}>{message}</p>
+);
 
 Notification.propTypes = {
   message: PropTypes.string.isRequired,

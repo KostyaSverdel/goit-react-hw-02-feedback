@@ -1,0 +1,50 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goodP {
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: dashed;
+    background-color: green;
+}
+
+.neutralP {
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: dashed;
+    background-color: cornflowerblue;
+}
+
+.badP {
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: dashed;
+    background-color: tomato;
+}
+
+.totalP {
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: dashed;
+    background-color: skyblue;
+}
+
+.positiveP {
+    font-family: serif;
+    font-size: 50px;
+}

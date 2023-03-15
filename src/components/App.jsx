@@ -1,5 +1,5 @@
 import React from 'react';
-import FeedbackWidget from './Feedback';
+import FeedbackWidget from '../components/Feedback/Feedback';
 
 function App() {
   return (
