@@ -1,28 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Statistics from '../StatisticsFeedback/StatisticsFeedback';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import Section from '../SectionFeedback/SectionFeedback';
-import css from '../Feedback/Feedback.module.css';
-
-function Notification({ message }) {
-  return <p className={css.messageTitle}>{message}</p>;
-}
-
-Notification.propTypes = {
-  message: PropTypes.string.isRequired,
-};
+import Notification from '../Notification/Notification';
 
 class FeedbackWidget extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    };
-  }
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
   handleFeedback = feedbackType => {
     this.setState(prevState => ({
